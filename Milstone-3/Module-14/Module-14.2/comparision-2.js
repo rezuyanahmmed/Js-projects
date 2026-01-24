@@ -12,6 +12,9 @@ console.log(15 <= 20);
 
 console.log(20 <= 15);
 
+console.log(42 <= 15);
+
+
 
 
 
