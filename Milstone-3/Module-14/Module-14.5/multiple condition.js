@@ -34,9 +34,21 @@ else{
   console.log("onno patro khuji"); 
 }
 
+// --------------------------NOTES-----------------------------------
+
+// NOTEs--- 2 ta shorto jodi puron korte hoy tahole (&&) eta dibo
+//       --r jodi 2 ta theke jekono ekta shorto puron korlei hobe tahole (||) eta dibo
+
+// -------------------end notes----------------------------------------
+
+
+
 // --------------------COMPLEX CONDDITION-----------------------------
 
 if((salary > 20000 && hasCar == true) || isBcs == true){
   console.log("Ok raji");
-  
+
 }
+
+
+
