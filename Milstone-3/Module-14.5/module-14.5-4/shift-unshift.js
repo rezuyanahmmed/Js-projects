@@ -1,0 +1,1 @@
+//PUSH and POP er motoi (SHIFT diye 1st element bad dewa jay and UNSHIFT diye 1st element add kora jay)
