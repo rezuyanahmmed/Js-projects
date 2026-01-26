@@ -9,3 +9,22 @@ fruits[2] = "jambura";
 
 // Console log the final array
 console.log(fruits);
+
+
+//---------------------------2nd------------------------------------------
+
+// Declare an array of 3 tourist destinations
+const touristPlaces = ["Paris", "Maldives", "Bali"];
+
+// Add a new tourist destination
+touristPlaces.push("Switzerland");
+
+// Add two more tourist destinations
+touristPlaces.push("Japan", "Canada");
+
+// Remove the last tourist destination added
+touristPlaces.pop();
+
+// Display the final array
+console.log(touristPlaces);
+
