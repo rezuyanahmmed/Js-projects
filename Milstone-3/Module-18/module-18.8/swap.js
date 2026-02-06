@@ -7,3 +7,6 @@ const temp = a;
 a = b;
 b = temp;
 console.log(a, b);
+
+
+//etar kaj holo just swap kora....
