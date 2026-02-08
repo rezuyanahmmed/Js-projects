@@ -1,3 +1,5 @@
+// mot hishab............
+
 function woodQuantity(chairQuantity, tableQuantity, bedQuantity) {
   const perChairwood = 5;
   const perTablewood = 15;
