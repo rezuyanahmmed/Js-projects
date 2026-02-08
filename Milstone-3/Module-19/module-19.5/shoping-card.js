@@ -1,3 +1,4 @@
+// shopping cost ber kora with quantity.........................
 const products = [
   { name: 'shampo', price: 300, quantity: 2 },
   { name: 'chiruni', price: 100, quantity: 3 },
