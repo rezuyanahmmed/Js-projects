@@ -22,8 +22,8 @@
       <ul>
         <li>Rafi</li>
         <li>Rafi</li>
-        <li>Rafi</li>
-        <li>Rafi</li>
+        <li class="name">Rizuyan</li>
+        <li class="name">Rafi</li>
       </ul>
     </section>
 
@@ -47,10 +47,25 @@
   <script>
 
     /**
+     * Query Selector--- eta kono ekta section er 1st element ta dibe........
+     * 
      * querySelectorAll
      
-    amra jodi pura ekta section k ekta class name diye oi namer vitor jodi alada kono element k khujte cai tahole ei [querySelectorAll] eta use korboo
+    amra jodi pura ekta section k ekta class name diye oi namer vitor jodi alada kono element k khujte cai tahole ei [querySelectorAll] eta use korboo,,tahole main class er vitore koyta class ache ta bole dibe and tarpor innerText diye amra oi vitor class e ki lekha ache ta o ber kora jabe......
+
     */
+
+    // const spanElements = document.querySelectorAll(".songs .name");
+    // for(const span of spanElements){
+    //   console.log(span);
+      
+    }
+
+    const spanElements = document.querySelector(".songs .name");
+    for(const span of spanElements){
+      console.log(span);
+      
+    }
 
   </script>
 </body>
