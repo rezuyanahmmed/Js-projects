@@ -33,7 +33,7 @@
 <body>
   <h1>explore Bubble event</h1>
 
-  <section>
+  <section id="list-container">
     <ol id="item-list">
       <li id="item-1">Lorem, ipsum.</li>
       <li id="item-2">Eos, quod!</li>
@@ -47,15 +47,22 @@
 
   <script>
     // list item to click handler
-    document.getElementById('item-2').addEventListener('click', function () {
+    document.getElementById('item-2').addEventListener('click', function (event) {
       console.log('i am clicked');
-
+      event.stopPropagation()
     })
 
 
     // ol click handler
     document.getElementById('item-list').addEventListener('click', function () {
       console.log('i am clicked ol');
+
+    })
+
+
+    // section click handler
+    document.getElementById('list-container').addEventListener('click', function () {
+      console.log('i am clicked section');
 
     })
   </script>
