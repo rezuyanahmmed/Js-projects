@@ -1,0 +1,64 @@
+<!-- (semi-advanced) Event bubble and Stop propagating -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event bubble</title>
+  <style>
+    body {
+      border: 2px solid salmon;
+      padding: 10px;
+    }
+
+    section {
+      border: 2px solid lightgreen;
+      padding: 20px;
+    }
+
+    ol {
+      border: 2px solid purple;
+      padding: 20px;
+    }
+
+    li {
+      border: 2px solid pink;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>explore Bubble event</h1>
+
+  <section>
+    <ol id="item-list">
+      <li id="item-1">Lorem, ipsum.</li>
+      <li id="item-2">Eos, quod!</li>
+      <li id="item-3">Illo, ut?</li>
+      <li id="item-4">Accusamus, corrupti.</li>
+      <li id="item-5">Fuga, impedit?</li>
+    </ol>
+  </section>
+
+
+
+  <script>
+    // list item to click handler
+    document.getElementById('item-2').addEventListener('click', function () {
+      console.log('i am clicked');
+
+    })
+
+
+    // ol click handler
+    document.getElementById('item-list').addEventListener('click', function () {
+      console.log('i am clicked ol');
+
+    })
+  </script>
+</body>
+
+</html>
