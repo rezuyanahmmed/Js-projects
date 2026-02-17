@@ -7,9 +7,10 @@
 
 
 document.getElementById('item-list').addEventListener('click', function(event){
-  console.log(event.target);
+  // console.log(event.target);
+  event.target.parentNode.removeChild(event.target)
   
-})
+})  //eta holo parent mane ekhon new ekta item banala etate click korlew remove hobe...
 
 // Add e new item
 document.getElementById('btn-add-item').addEventListener('click', function(){
