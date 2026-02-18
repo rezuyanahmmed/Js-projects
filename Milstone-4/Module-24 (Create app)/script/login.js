@@ -10,10 +10,10 @@ document.getElementById('login-btn').addEventListener('click', function () {
   console.log(pin);
 
   // 3-match pin and mobile number
-  if (contactNumber == '01201234567' && pin == '1234') {
+  if (contactNumber == '01843125789' && pin == '1234') {
     // 3.1- true:::>>alert> homepage
     alert('login success')
-    window.location.assign('homepage.html')
+    window.location.assign('homepage.html')  //ekhane assign er jaygay raplace o dewa jaito,replace dile somossa holo next page e gele back ashar option thakbe na......
   }
   else {
     // 3.2- false:::>>alert> return
