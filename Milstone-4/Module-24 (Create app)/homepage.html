@@ -62,26 +62,31 @@
 
     <div class=" w-11/12 mx-auto buttons grid grid-cols-3 gap-3 pt-[24px]">
 
-      <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
+      <button onclick="showOnly('add-money')" class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-1.png" alt="">
         <p class="text-[12px]">Add Money</p>
       </button>
-      <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
+
+      <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-2.png" alt="">
         <p class="text-[12px]">Cashout</p>
       </button>
+
       <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-3.png" alt="">
         <p class="text-[12px]">Transfer Money</p>
       </button>
+
       <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-4.png" alt="">
         <p class="text-[12px]">Get Bonus</p>
       </button>
+
       <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-5.png" alt="">
         <p class="text-[12px]">Pay Bill</p>
       </button>
+
       <button class="btn flex-col h-full py-4 rounded-[12px] btn-primary btn-soft">
         <img src="./assets/opt-6.png" alt="">
         <p class="text-[12px]">Transactions</p>
@@ -90,7 +95,7 @@
     </div>
   </section>
 
-  <section id="add-money" class="w-11/12 mx-auto py-5">
+  <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
     <h2 class="text-xl font-bold mb-5">Add Money </h2>
     <div class="card bg-base-100 w-full shadow rounded-[22px]">
       <div class="card-body">
@@ -132,7 +137,7 @@
 
 
 
-  <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
+  <section id="cashout" class="w-11/12 mx-auto py-5 ">
     <h2 class="text-xl font-bold mb-5">Cash Out</h2>
     <div class="card bg-base-100 w-full shadow rounded-[22px]">
       <div class="card-body">
