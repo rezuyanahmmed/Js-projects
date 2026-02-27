@@ -10,5 +10,5 @@ console.log(newPrice);
 
 
 //---------------------
-const { price } = { name: 'Redmi', price: 25000, brand: 'xiomi' };
-console.log(price); //ekhane amra object er ekta faka variable nichi and ei faka variable e object er vitorer property er name diye oi faka object theke oi property er value ta output e pacchi...
+const { price, camera = '12mp' } = { name: 'Redmi', price: 25000, brand: 'xiomi' };
+console.log(camera); //ekhane amra object er ekta faka variable nichi and ei faka variable e object er vitorer property er name diye oi faka object theke oi property er value ta output e pacchi...
