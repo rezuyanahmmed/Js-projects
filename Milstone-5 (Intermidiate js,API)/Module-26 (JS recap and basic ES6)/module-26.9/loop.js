@@ -12,6 +12,6 @@ const employe = {
   salary: 40000,
 }
 for(const key in employe){
-  console.log(key);
+  console.log(ke);
   
 }
