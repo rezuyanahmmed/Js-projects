@@ -26,3 +26,13 @@ for(const key in employe){
   console.log(key);
   
 }
+//-------------------
+const employe = {
+  name: 'jhon doe',
+  1: 'desk one',
+  salary: 40000,
+}
+for(const key in employe){
+  console.log(key);
+  
+}
