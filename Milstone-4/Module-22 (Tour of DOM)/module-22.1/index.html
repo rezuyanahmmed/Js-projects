@@ -22,6 +22,22 @@
       <li>Rafi</li>
     </ul>
   </main>
+  <script>
+    const liCollection = document.getElementsByTagName('li');
+    console.log(liCollection);
+    for( const li of liCollection){
+      console.log(li.innerText);
+      
+    }
+    // all heading tags
+
+    const allHeading = document.getElementsByTagName('h2');
+    for(const heading of allHeading){
+      console.log(heading);
+      
+    }
+    
+  </script>
 </body>
 
 </html>

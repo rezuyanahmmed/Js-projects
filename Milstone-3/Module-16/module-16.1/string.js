@@ -7,4 +7,4 @@ number[1] = 10  //etar karone index 1 er man change hoye geche
 console.log(number); 
 
 
-
+// but String hole seta change hoito na

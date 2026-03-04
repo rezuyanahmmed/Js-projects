@@ -1,5 +1,8 @@
 // Lower case and Upper case and Trim er js e use
 
+
+//------------------Lower and Upper case--------------------------------------
+
 const subject = 'Chemestry';
 const book = 'chemestry';
 
@@ -14,7 +17,7 @@ else {
 }
 
 
-//-------------------Trim----------------------------
+//-------------------Trim------------------------------------------------------
 
 const district = 'cumilla';
 const upazila = '  cumilla  ';

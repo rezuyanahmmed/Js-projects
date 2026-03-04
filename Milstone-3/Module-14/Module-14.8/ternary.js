@@ -15,14 +15,16 @@
 
 
 let price = 500;
-const isLeader = true;
-if(isLeader === false){
+const isLeader = true; 
+if(isLeader === true){    // --upore jsut true ba false kina ta cheak kora hoiche
   price = 0;
 }
 else{
   price = price + 100
 }
 console.log(price);
+
+
 
 // price = isLeader === true ? 0 : price + 100;
 

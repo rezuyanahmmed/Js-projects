@@ -1,3 +1,7 @@
+// Objects
+//
+
+
 const subjects = {
   name: 'web-design',
   teacher: 'Rafi sir',
@@ -9,3 +13,4 @@ const subjects = {
     third: 5 march,
   }
 }
+

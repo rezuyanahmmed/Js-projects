@@ -1,3 +1,5 @@
+//         Different types of parameters for a function
+
 function doubleOrtriple(number, dodouble) {
   if (dodouble === true) {
     const result = number * 2;

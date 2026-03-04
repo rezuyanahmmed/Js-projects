@@ -1,3 +1,6 @@
+//  Explore more event type and Simple github like delete confirmation button
+
+
 // document.getElementById('btn-mouse').addEventListener('mouseenter', function(){
 //   console.log('event and event');
 

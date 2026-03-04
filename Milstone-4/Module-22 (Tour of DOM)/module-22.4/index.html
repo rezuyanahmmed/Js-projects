@@ -7,6 +7,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour of DOM</title>
+  <style>
+    .bg-red{
+      background-color: red;
+      color: green;
+    }
+  </style>
 
 </head>
 
@@ -18,7 +24,7 @@
 
 
     <section class="songs">
-      <h2>Welcome to my DOM</h2>
+      <h2 class="bg-red">Welcome to my DOM</h2>
       <ul>
         <li>Rafi</li>
         <li>Rafi</li>
@@ -55,16 +61,18 @@
 
     */
 
-    // const spanElements = document.querySelectorAll(".songs .name");
-    // for(const span of spanElements){
-    //   console.log(span);
-      
+    const spanElements = document.querySelectorAll(".songs .name");
+    for (const span of spanElements) {
+      console.log(span);
+
     }
 
+    //Query selector....
+
     const spanElements = document.querySelector(".songs .name");
-    for(const span of spanElements){
+    for (const span of spanElements) {
       console.log(span);
-      
+
     }
 
   </script>
