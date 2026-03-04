@@ -5,5 +5,9 @@ const loadTodo = () => {
     .then((data) => displayTodo(data))
 };
 
-const displayTodo = (todos) => { };
+const displayTodo = (todos) => {
+  console.log(todos);
+};
+
+
 loadTodo();
