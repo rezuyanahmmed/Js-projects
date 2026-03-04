@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    #post-container {
+      max-width: 1160px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(0, 1fr);
+      grid-gap: 20px;
+    }
+    .post-card{
+      border: 1px solid gray;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .post-card p{
+      text-align: justify;
+    }
+  </style>
 </head>
+
 <body>
   <button onclick="loadpost()">Load Posts</button>
-  <ol id="post-container"></ol>
+  <!-- <ol id="post-container"></ol> -->
 
+
+  <div id="post-container">
+    
+
+  </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
