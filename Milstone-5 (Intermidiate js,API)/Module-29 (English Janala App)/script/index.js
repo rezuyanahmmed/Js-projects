@@ -13,14 +13,35 @@ const loadLevelWord = (id) => {
 
 const displayLevelWord = (words) => {
   const wordContainer = document.getElementById('word-container');
-  // wordContainer.innerHTML = "";
+  wordContainer.innerHTML = "";
+
+
+  // {
+  //   "id": 82,
+  //     "level": 1,
+  //       "word": "Car",
+  //         "meaning": "গাড়ি",
+  //           "pronunciation": "কার"
+  // }
+
+
 
   words.forEach((word) => {
     console.log(word);
     const card = document.createElement('div');
     card.innerHTML = `
-    
-    `
+
+     <div class="bg-white rounded-[10px] text-center shadow-sm py-4 px-4">
+      <h2 class="font-bold text-2xl">${word.word}</h2>
+      <p class="font-semibold text-[13px] pt-3">Meaning /Pronounciation</p>
+      <div class="text-[18px] font-mediumfont-bangla pt-5">"আগ্রহী / ইগার"</div>
+      <div class="flex justify-between items-center">
+        <button class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-circle-info"></i></button>
+        <button class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-volume-high"></i></button>
+      </div>
+    </div>
+    `;
+    wordContainer.append(card);
 
   });
 
