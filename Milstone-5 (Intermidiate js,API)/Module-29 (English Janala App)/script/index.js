@@ -4,11 +4,28 @@ const loadLeassons = () => {
     .then((json) => displayLeasson(json.data));
 };
 
+
+// jei button e click korbo shei buttn kaj active howar function
+const removeActive = () => {
+  const leassonButtons = document.querySelectorAll('.leasson-btn');
+  // console.log(leassonButtons);
+  leassonButtons.forEach((btn) => btn.classList.remove('active'));
+
+};
+
 const loadLevelWord = (id) => {
   const url = `https://openapi.programming-hero.com/api/level/${id}`
   fetch(url)
     .then((res) => res.json())
-    .then((data) => displayLevelWord(data.data));
+    .then((data) => {
+
+      removeActive();
+      const clickBtn = document.getElementById(`leasson-btn-${id}`);
+      // console.log(clickBtn);
+      clickBtn.classList.add('active');
+
+      displayLevelWord(data.data);
+    });
 };
 
 const displayLevelWord = (words) => {
@@ -75,7 +92,7 @@ const displayLeasson = (leassons) => {
     //3:create element
     const btnDiv = document.createElement('div');
     btnDiv.innerHTML = `
-    <button onclick="loadLevelWord(${leasson.level_no})" class="btn btn-outline btn-primary">
+    <button id="leasson-btn-${leasson.level_no}" onclick="loadLevelWord(${leasson.level_no})" class="btn btn-outline btn-primary leasson-btn">
     <i class="fa-solid fa-book-open"></i>Leasson - ${leasson.level_no}<button>
     `;
 
