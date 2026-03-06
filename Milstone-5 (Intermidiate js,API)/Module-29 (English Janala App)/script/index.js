@@ -37,8 +37,55 @@ const loadworddetail = async (id) => {
   displayWordDetails(details.data);
 };
 
+// {
+//     "word": "Linger",
+//     "meaning": "থেমে থাকা / বিলম্ব করা",
+//     "pronunciation": "লিঙ্গার",
+//     "level": 2,
+//     "sentence": "She lingered at the door, unwilling to leave.",
+//     "points": 2,
+//     "partsOfSpeech": "verb",
+//     "synonyms": [
+//         "stay",
+//         "remain",
+//         "delay"
+//     ],
+//     "id": 12
+// }
+
+
+
+
 const displayWordDetails = (word) => {
   console.log(word);
+  const detailsBox = document.getElementById('details-container');
+  detailsBox.innerHTML = `
+  <div class="">
+          <h2 class="text-[26px] font-semibold">${word.word} (<i class="fa-solid fa-microphone-lines"></i>:${word.pronunciation})</h2>
+        </div>
+        <div class="space-y-1 pt-5">
+          <p class="font-semibold">Meaning</p>
+          <p class="font-bangla">${word.meaning}</p>
+        </div>
+
+        <div class="space-y-1 pt-5">
+          <p class="font-semibold">Example</p>
+          <p class="">${word.sentence}</p>
+        </div>
+
+        <div class="space-y-2 pt-6">
+          <p class="font-semibold font-bangla">সমার্থক শব্দ গুলো</p>
+          <span class="btn">Enthusiastic</span>
+          <span class="btn">excited</span>
+          <span class="btn">keen</span>
+        </div>
+
+        <div class="pt-6">
+          <button class="btn btn-primary">Complete Learning</button>
+        </div>
+
+  `;
+  document.getElementById('word_modal').showModal();
 
 };
 
