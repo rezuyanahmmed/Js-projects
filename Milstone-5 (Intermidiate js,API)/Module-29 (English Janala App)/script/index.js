@@ -28,6 +28,20 @@ const loadLevelWord = (id) => {
     });
 };
 
+// info er function
+const loadworddetail = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/word/${id}`;
+  // console.log(url);
+  const res = await fetch(url);
+  const details = await res.json();
+  displayWordDetails(details.data);
+};
+
+const displayWordDetails = (word) => {
+  console.log(word);
+
+};
+
 const displayLevelWord = (words) => {
   const wordContainer = document.getElementById('word-container');
   wordContainer.innerHTML = "";
@@ -38,11 +52,9 @@ const displayLevelWord = (words) => {
       <img class="mx-auto" src="./assets/alert-error.png" alt="">
       <p class="font-bangla text-[15px] text-[#524f4cf3]">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
       <h2 class="font-bangla text-[30px]">নেক্সট Lesson এ যান</h2>
-    </div>
-
-
-
-    `;
+    </div>   
+    `
+      ;
     return;
   }
 
@@ -67,7 +79,7 @@ const displayLevelWord = (words) => {
       <p class="font-semibold text-[13px] pt-3">Meaning /Pronounciation</p>
       <div class="text-[18px] font-mediumfont-bangla pt-5">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি "} / ${word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যায়নি"}"</div>
       <div class="flex justify-between items-center">
-        <button onclick="my_modal_5.showModal()" class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-circle-info"></i></button>
+        <button onclick="loadworddetail(${word.id})" class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-circle-info"></i></button>
         <button class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-volume-high"></i></button>
       </div>
     </div>
