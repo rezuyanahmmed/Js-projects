@@ -3,6 +3,13 @@ const createElement = (arr) => {
   return htmlElements.join(" ");
 };
 
+// Volume section
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
 
 //Loading section...
 const manageSpinner = (status) => {
@@ -146,8 +153,10 @@ const displayLevelWord = (words) => {
       <p class="font-semibold text-[13px] pt-3">Meaning /Pronounciation</p>
       <div class="text-[18px] font-mediumfont-bangla pt-5">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি "} / ${word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যায়নি"}"</div>
       <div class="flex justify-between items-center">
+
         <button onclick="loadworddetail(${word.id})" class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-circle-info"></i></button>
-        <button class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-volume-high"></i></button>
+
+        <button onclick="pronounceWord('${word.word}')" class="btn mt-10 bg-[#1a90ff17] hover:bg-[#1A91FF]"><i class="fa-solid fa-volume-high"></i></button>
       </div>
     </div>
     `;
@@ -195,7 +204,7 @@ document.getElementById('btn-search').addEventListener('click', () => {
     .then(data => {
       const allWords = data.data;
       console.log(allWords);
-      const filterWords = allWords.filter(word =>word.word.toLowerCase().includes(searchValue));
+      const filterWords = allWords.filter(word => word.word.toLowerCase().includes(searchValue));
       displayLevelWord(filterWords);
     });
 
