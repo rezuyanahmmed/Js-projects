@@ -10,3 +10,4 @@ const getNumberFromLS = () =>{
   console.log('from saved local storage', number);
   
 }
+
