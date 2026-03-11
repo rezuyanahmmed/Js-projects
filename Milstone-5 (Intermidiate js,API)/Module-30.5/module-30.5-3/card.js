@@ -7,6 +7,7 @@ const handleProduct = () => {
   console.log('product add', product, quantity);
 
   displayProduct(product, quantity)
+  addProductToCrat(product, quantity)
 
   productEL.value = '';
   quantityEl.value = '';
@@ -17,7 +18,12 @@ const getCart = () => {
   return cart;
 }
 
-const
+const addProductToCrat = (product, quantity) => {
+  const cart = getCart();
+  cart[product] = quantity;
+  console.log('cart', cart);
+  
+}
 
 const displayProduct = (product, quantity) => {
   const li = document.createElement('li');
