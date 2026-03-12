@@ -87,19 +87,24 @@ function App() {
       <h1>Vite + React</h1>
       <Pet></Pet>
       <Student></Student>
-      <Developer></Developer>
+      <Developer name="Rizuyan" tech="Js"></Developer>
+      <Developer name="Rafi" tech="Python"></Developer>
     </>
   )
 }
 
-function Developer() {
+function Developer(props) {
+  console.log(props);
+  // amra ekhane developer er jonno function likhechi setate style diyechi...
+  // --3 vabe ekhnae style dewa jay...
+  // amara ekhane props name ekta pearmeter name dichi tarpor main function e name er pore seceond bracket dite ei perameter er name dot oi property er name ta dibo jeta amara function App er vitor use korechi UI te dekhanr jonno...
   return (
     <div style={{
       border:'2px solid red',
       borderRadius:'20px'
     }}>
-      <p>name:</p>
-      <p>technology:</p>
+      <p>name: {props.name}</p>
+      <p>technology: {props.tech}</p>
     </div>
   )
 }
