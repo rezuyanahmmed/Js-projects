@@ -94,9 +94,9 @@ function App() {
       <Doctor name="Ali Hasan" center="Dhaka"></Doctor>
       <Doctor name="Ahmmed Ullah" center="Cumilla"></Doctor>
       <Salami event="Eid ul fitor" ammount="50tk"></Salami>
-      <ToDo task="learn React"></ToDo>
-      <ToDo task="Revise React"></ToDo>
-      <ToDo task="take it"></ToDo>
+      <ToDo task="learn React" isDone={true}></ToDo>
+      <ToDo task="Revise React" isDone={false}></ToDo>
+      <ToDo task="take it" isDone={true}></ToDo>
     </>
   )
 }
