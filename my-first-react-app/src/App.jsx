@@ -89,6 +89,8 @@ function App() {
       <Student></Student>
       <Developer name="Rizuyan" tech="Js"></Developer>
       <Developer name="Rafi" tech="Python"></Developer>
+      <Doctor name="Ali Hasan" center="Dhaka"></Doctor>
+      <Doctor name="Ahmmed Ullah" center="Cumilla"></Doctor>
     </>
   )
 }
@@ -112,6 +114,15 @@ function Developer(props) {
 function Pet() {
   return (
     <p>cat</p>
+  )
+}
+
+function Doctor(pro){
+  return(
+    <div>
+      <h3>Name: {pro.name}</h3>
+      <p>Center: {pro.center} </p>
+    </div>
   )
 }
 
