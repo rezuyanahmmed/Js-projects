@@ -91,7 +91,18 @@ function App() {
       <Developer name="Rafi" tech="Python"></Developer>
       <Doctor name="Ali Hasan" center="Dhaka"></Doctor>
       <Doctor name="Ahmmed Ullah" center="Cumilla"></Doctor>
+      <Salami event="Eid ul fitor" ammount="50tk"></Salami>
     </>
+  )
+}
+
+// distructure er use kore.....
+function Salami({ event, ammount}) {
+  return (
+    <div>
+      <p>salami for: {event} </p>
+      <p>ammount: {ammount}</p>
+    </div>
   )
 }
 
@@ -102,8 +113,8 @@ function Developer(props) {
   // amara ekhane props name ekta pearmeter name dichi tarpor main function e name er pore seceond bracket dite ei perameter er name dot oi property er name ta dibo jeta amara function App er vitor use korechi UI te dekhanr jonno...
   return (
     <div style={{
-      border:'2px solid red',
-      borderRadius:'20px'
+      border: '2px solid red',
+      borderRadius: '20px'
     }}>
       <p>name: {props.name}</p>
       <p>technology: {props.tech}</p>
@@ -117,8 +128,8 @@ function Pet() {
   )
 }
 
-function Doctor(pro){
-  return(
+function Doctor(pro) {
+  return (
     <div>
       <h3>Name: {pro.name}</h3>
       <p>Center: {pro.center} </p>
