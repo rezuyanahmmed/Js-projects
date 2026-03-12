@@ -71,6 +71,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import ToDo from './Todo';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -92,6 +94,9 @@ function App() {
       <Doctor name="Ali Hasan" center="Dhaka"></Doctor>
       <Doctor name="Ahmmed Ullah" center="Cumilla"></Doctor>
       <Salami event="Eid ul fitor" ammount="50tk"></Salami>
+      <ToDo task="learn React"></ToDo>
+      <ToDo task="Revise React"></ToDo>
+      <ToDo task="take it"></ToDo>
     </>
   )
 }
