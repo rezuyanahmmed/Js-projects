@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+// import App from './App.jsx'
 
 import {
   createBrowserRouter,
@@ -13,6 +13,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <div>Hello World</div>,
   },
+  {
+    path: 'blogs',
+    element: <div>All my blogs here</div>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
