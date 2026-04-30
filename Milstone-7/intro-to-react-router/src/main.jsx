@@ -18,9 +18,10 @@ const router = createBrowserRouter([
     element: <div>All my blogs here</div>
   },
   {
-    path:"name",
+    path: "name",
     element: <div>My name is Rizuyan</div>
-  }
+  },
+ 
 ]);
 
 createRoot(document.getElementById('root')).render(
