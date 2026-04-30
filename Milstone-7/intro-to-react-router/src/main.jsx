@@ -16,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: 'blogs',
     element: <div>All my blogs here</div>
+  },
+  {
+    path:"name",
+    element: <div>My name is Rizuyan</div>
   }
 ]);
 
