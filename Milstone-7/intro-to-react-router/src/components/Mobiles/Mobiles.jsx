@@ -5,7 +5,6 @@ const Mobiles = () => {
     <div>
       <h2>This is mobiles</h2>
       <h2>This is mobiles</h2>
-      <h2>This is mobiles</h2>
     </div>
   );
 };
