@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Header = () => {
   return (
     <div>
       <h3>This is my header</h3>
       <nav>
-        <a href="/">Home</a>
-        <a href="/mobiles">Mobiles</a>
-        <a href="/laptops">Laptops</a>
+        <Link to="/">Home</Link>
+        <Link to="/mobiles">Mobiles</Link>
+        <Link to="/laptops">Laptops</Link>
+
       </nav>
     </div>
   );
