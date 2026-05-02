@@ -11,6 +11,7 @@ const Root = () => {
       <Header></Header>
 
       <div className='root-main'>
+        
         <Sidebar></Sidebar>
         <Outlet></Outlet>
       </div>
