@@ -10,6 +10,7 @@ import {
 import Root from './components/root/Root';
 import Mobiles from './components/Mobiles/Mobiles';
 import Home from './components/Home/Home';
+import Laptops from './components/Laptop/Laptops';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
-      { path: 'mobiles', Component: Mobiles }
+      { path: 'mobiles', Component: Mobiles },
+      { path: 'laptops', Component: Laptops }
     ]
   },
   // {
