@@ -15,10 +15,7 @@ const Root = () => {
         <Sidebar></Sidebar>
         <Outlet></Outlet>
       </div>
-      <div>
-
-      </div>
-
+      
       <Footer />
     </div>
   );
