@@ -2,7 +2,9 @@ import React from 'react';
 
 const Laptops = () => {
   return (
-    
+    <div>
+      <h2>This is my laptop</h2>
+    </div>
   );
 };
 
