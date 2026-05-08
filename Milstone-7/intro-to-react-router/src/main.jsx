@@ -23,8 +23,8 @@ const router = createBrowserRouter([
       { path: 'laptops', Component: Laptops },
       {
         path: 'users',
-        loader: () => fetch('https://jsonplaceholder.typicode.com/users')
-          Component: Users
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
+        Component: Users
       }
     ]
   },
